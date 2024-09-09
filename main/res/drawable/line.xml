@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size
+        android:width="2dp"
+        android:height="wrap_content"/> <!-- Adjust width as needed -->
+    <solid android:color="#00FF00"/> <!-- Line color (green) -->
+</shape>
