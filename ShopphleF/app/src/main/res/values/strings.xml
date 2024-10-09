@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShopPhlef</string>
+    <string name="product_image_desc">Product Image</string> <!-- This line was added -->
+    <!-- You can add other string resources as needed -->
+</resources>
