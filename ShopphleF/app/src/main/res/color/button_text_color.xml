@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Active state (pressed) -->
+    <item android:state_pressed="true" android:color="@color/white" /> <!-- White text when pressed -->
+
+    <!-- Default state (inactive) -->
+    <item android:color="@color/black" /> <!-- Black text when inactive -->
+</selector>
