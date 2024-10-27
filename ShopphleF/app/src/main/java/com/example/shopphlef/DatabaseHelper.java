@@ -193,5 +193,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+     public void clearCartTableContents() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        try {
+            db.delete(TABLE_CART, null, null);
+        } catch (Exception e) {
+            Log.e("DatabaseHelper", "Error clearing products table contents", e);
+        }
+    }
 
 }
