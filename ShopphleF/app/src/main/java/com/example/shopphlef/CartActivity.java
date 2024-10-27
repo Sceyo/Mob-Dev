@@ -35,6 +35,7 @@ public class CartActivity extends AppCompatActivity {
 
         findViewById(R.id.btnCheckout).setOnClickListener(view -> {
             Intent intent = new Intent(CartActivity.this, OrderActivity.class);
+            databaseHelper.clearCartTableContents();
             startActivity(intent);
         });
 
