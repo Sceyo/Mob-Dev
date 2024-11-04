@@ -1,0 +1,94 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/aot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order #"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#8c8377" />
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placed on "
+            android:textSize="14sp"
+            android:layout_below="@id/aot"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/aot"
+            android:layout_marginTop="25dp"
+            android:background="#000000" />
+
+        <ImageView
+            android:id="@+id/order_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uniqlo1"  />
+
+        <TextView
+            android:id="@+id/product_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/order_image"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/order_image"
+            android:text="Brand"
+            android:textColor="#8c8377"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_brand"
+            android:layout_toEndOf="@id/order_image"
+            android:layout_marginStart="20dp"
+            android:text="Description"
+            android:textSize="17sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_description"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="15dp"
+            android:text="$19"
+            android:textColor="#f4ca64" />
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="175dp"
+            android:src="@drawable/ic_right" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
